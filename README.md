@@ -1,0 +1,1 @@
+Projeto feito para a criação de um site para ser feita a organização e automatização da inscrição de alunos em ordem alfabética.
