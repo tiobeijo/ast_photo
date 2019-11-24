@@ -1,0 +1,9 @@
+uuid: a11617a4-baf2-45ad-8bd7-b12ef7c6f33c
+langcode: pt-br
+status: true
+dependencies: {  }
+id: student
+label: Aluno
+weight: 3
+is_admin: null
+permissions: {  }
