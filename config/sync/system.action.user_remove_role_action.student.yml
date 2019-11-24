@@ -1,0 +1,14 @@
+uuid: cabaa3fc-444a-4c71-be20-9d17f0e379a1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - user.role.student
+  module:
+    - user
+id: user_remove_role_action.student
+label: 'Remove the Aluno role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: student
