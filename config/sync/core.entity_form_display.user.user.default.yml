@@ -17,13 +17,18 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  account:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   contact:
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_adress:
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -31,7 +36,7 @@ content:
     type: string_textfield
     region: content
   field_name:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -47,7 +52,6 @@ content:
     weight: 0
     region: content
 hidden:
-  account: true
   langcode: true
   language: true
   timezone: true

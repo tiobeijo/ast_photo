@@ -26,6 +26,7 @@
     "drupal/core": "^8.7.0",
     "drupal/graphql": "^4.0@alpha",
     "drupal/multiple_registration": "^2.87",
+    "drupal/remove_username": "^1.0",
     "drush/drush": "^9.0.0",
     "vlucas/phpdotenv": "^2.4",
     "webflo/drupal-finder": "^1.0.0",
