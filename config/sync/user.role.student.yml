@@ -6,4 +6,10 @@ id: student
 label: Aluno
 weight: 3
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access toolbar'
+  - 'administer image styles'
+  - 'create students content'
+  - 'delete own students content'
+  - 'edit own comments'
+  - 'edit own students content'

@@ -1,0 +1,21 @@
+uuid: 0fc6bb60-1e11-4e1c-97c2-b779975e0182
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.students
+  module:
+    - text
+id: node.students.field_address
+field_name: field_address
+entity_type: node
+bundle: students
+label: Endereço
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

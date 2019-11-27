@@ -1,0 +1,23 @@
+uuid: 7f0b036b-d196-4ce5-a9da-92a68c2a089b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_age
+    - node.type.students
+id: node.students.field_age
+field_name: field_age
+entity_type: node
+bundle: students
+label: Idade
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: Anos
+field_type: integer

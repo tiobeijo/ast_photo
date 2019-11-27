@@ -1,0 +1,25 @@
+uuid: f07ea433-4a0c-4a30-805b-4b432c41d09d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.students.field_address
+    - field.field.node.students.field_profile_picture
+    - node.type.students
+  module:
+    - user
+id: node.students.teaser
+targetEntityType: node
+bundle: students
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_profile_picture: true
+  langcode: true
