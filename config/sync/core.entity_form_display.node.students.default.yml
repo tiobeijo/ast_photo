@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.students.field_address
     - field.field.node.students.field_age
+    - field.field.node.students.field_name
     - field.field.node.students.field_profile_picture
     - image.style.large
     - node.type.students
@@ -24,7 +25,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_address:
-    weight: 11
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -32,11 +33,19 @@ content:
     type: text_textfield
     region: content
   field_age:
-    weight: 10
+    weight: 9
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
     region: content
   field_profile_picture:
     weight: 8
@@ -80,14 +89,6 @@ content:
     weight: 5
     region: content
     third_party_settings: {  }
-  title:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 2
@@ -97,4 +98,5 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  title: true

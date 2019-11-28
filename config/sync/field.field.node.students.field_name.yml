@@ -1,0 +1,21 @@
+uuid: cea74e01-8da5-4082-9ef7-07e0c9c1d5c6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.students
+  module:
+    - text
+id: node.students.field_name
+field_name: field_name
+entity_type: node
+bundle: students
+label: Nome
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

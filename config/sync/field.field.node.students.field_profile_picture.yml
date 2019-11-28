@@ -12,7 +12,7 @@ field_name: field_profile_picture
 entity_type: node
 bundle: students
 label: 'Imagem de Perfil'
-description: ''
+description: '<a href="https://webcamtoy.com/" target="_blank">Tirar foto com a Webcam</a>'
 required: false
 translatable: false
 default_value: {  }
