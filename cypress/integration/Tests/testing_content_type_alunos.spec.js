@@ -10,7 +10,7 @@ describe('Ast_photo login test', function() {
 
         cy.contains('Adicionar conteúdo').click()
         cy.contains('Alunos').click()
-        cy.get('input[name="field_name[0][value]"]').type('Peter Junior', {force:true})
+        cy.get('input[name="field_name[0][value]"]').type('Juno Zireael', {force:true})
         cy.contains('Tirar foto com a Webcam')
 
         const galleryPath = 'images/image1.jpg';
