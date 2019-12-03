@@ -197,33 +197,59 @@ display:
         options:
           view_mode: teaser
       sorts:
-        sticky:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
           admin_label: ''
+          order: ASC
+          exposed: false
           expose:
             label: ''
-          exposed: false
-          field: sticky
-          group_type: group
-          id: sticky
-          order: DESC
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+        field_name_value:
+          id: field_name_value
+          table: node__field_name
+          field: field_name_value
           relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
+        sticky:
+          id: sticky
           table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
           plugin_id: boolean
           entity_type: node
           entity_field: sticky
         created:
-          field: created
           id: created
-          order: DESC
           table: node_field_data
-          plugin_id: date
+          field: created
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
           granularity: second
+          plugin_id: date
           entity_type: node
           entity_field: created
       style:
