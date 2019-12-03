@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.rss
   module:
     - node
     - user
@@ -195,7 +195,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: rss
       sorts:
         title:
           id: title
