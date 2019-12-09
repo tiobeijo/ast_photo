@@ -1,0 +1,11 @@
+uuid: 9b293d15-6c2c-41e7-bc93-d7540a9c6173
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.students
+id: node.students
+target_entity_type_id: node
+target_bundle: students
+default_langcode: site_default
+language_alterable: false

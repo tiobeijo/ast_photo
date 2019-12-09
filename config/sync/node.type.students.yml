@@ -1,0 +1,22 @@
+uuid: 571a1b30-d1f3-475d-97fa-605a09986fe9
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - admin
+      - tools
+      - account
+      - main
+      - footer
+    parent: 'admin:entity.view.collection'
+name: Alunos
+type: students
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

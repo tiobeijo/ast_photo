@@ -3,8 +3,8 @@ langcode: pt-br
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - core.entity_view_mode.node.rss
-    - core.entity_view_mode.node.teaser
   module:
     - node
     - user
@@ -195,37 +195,23 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: rss
       sorts:
-        sticky:
-          admin_label: ''
-          expose:
-            label: ''
-          exposed: false
-          field: sticky
-          group_type: group
-          id: sticky
-          order: DESC
-          relationship: none
+        title:
+          id: title
           table: node_field_data
-          plugin_id: boolean
-          entity_type: node
-          entity_field: sticky
-        created:
-          field: created
-          id: created
-          order: DESC
-          table: node_field_data
-          plugin_id: date
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
+          order: ASC
           exposed: false
           expose:
             label: ''
-          granularity: second
           entity_type: node
-          entity_field: created
+          entity_field: title
+          plugin_id: standard
       style:
         type: default
         options:
@@ -233,7 +219,7 @@ display:
           row_class: ''
           default_row_class: true
           uses_fields: false
-      title: ''
+      title: 'Alunos '
       header: {  }
       footer: {  }
       relationships: {  }
@@ -278,7 +264,7 @@ display:
         type: node_rss
         options:
           relationship: none
-          view_mode: rss
+          view_mode: full
       display_extenders: {  }
     cache_metadata:
       contexts:
@@ -291,8 +277,12 @@ display:
     display_options:
       path: node
       display_extenders: {  }
+      defaults:
+        style: true
+        row: true
+      display_description: ''
     display_plugin: page
-    display_title: Página
+    display_title: Alunos
     id: page_1
     position: 1
     cache_metadata:
